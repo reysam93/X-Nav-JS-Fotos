@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <script type="text/javascript" charset="utf-8">
+       urls = [];
+       function generateImages(){
+         urls.push('https://i.ytimg.com/vi/GjiFHJNSqQI/maxresdefault.jpg')
+         urls.push('http://k37.kn3.net/taringa/2/5/4/9/6/0/2/ertonycristalero/563.jpg?2801')
+         urls.push('http://www.imagenesde.info/wp-content/uploads/2014/11/imagenesdepaisajes3.jpg')
+         urls.push('http://fotos-de.es/wp-content/uploads/2015/02/01C1.jpg')
+         urls.push('http://www.fondosni.com/images/2012-06-25/Paisaje%20de%20agua-77223.jpg')
+       }
+
+       function newImage(){
+        var index = Math.floor(Math.random()*urls.length);
+        document.getElementById('image').src = urls[index];
+       }
+     </script>
+     <title>Ejercicio 5.5.7</title>
+   </head>
+   <body>
+     <img id="image" src="https://i.ytimg.com/vi/GjiFHJNSqQI/maxresdefault.jpg" height="500" width="500">
+     <p><a href="javascript:newImage()">Another Image!</p>
+     <script type="text/javascript" charset="utf-8">generateImages()</script>
+   </body>
+</html>
